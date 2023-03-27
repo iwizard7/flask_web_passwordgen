@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def json():
-    return render_template('main.html')
+    return render_template('home.html')
 
 #background process happening without any refreshing
 @app.route('/background_process_test')
