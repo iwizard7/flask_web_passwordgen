@@ -15,4 +15,4 @@ def index():
     elif request.method == 'GET':
         return render_template('home.html', form=form)
 
-    return render_template("home.html")
+    return render_template("home.html") #test
