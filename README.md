@@ -8,5 +8,6 @@ docker images
 ```
 #### Run as python script ⚙️
 ```bash
+pip install -r /requirements.txt
 sudo nohup python3 main.py > log.txt 2>&1 &
 ```
