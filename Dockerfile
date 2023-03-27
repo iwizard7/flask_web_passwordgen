@@ -1,14 +1,5 @@
-# Этап, на котором выполняются подготовительные действия
-FROM python:latest
-
+FROM python:3.9.1
+ADD . /app
 WORKDIR /app
-
-ENV PYTHONDONTWRITEBYTECODE 1
-ENV PYTHONUNBUFFERED 1
-COPY main.py
-
-RUN mkdir -p /templates
-COPY /templates/index.html /app/templates
-COPY requirements.txt .
-RUN pip wheel --no-cache-dir --no-deps --wheel-dir /app/wheels -r requirements.txt
+RUN pip install -r requirements.txt
 CMD [ "python", "./main.py"]
