@@ -1,9 +1,12 @@
-from flask import Flask, render_template, request
-import random
+from flask import Flask, render_template, request, send_from_directory
+import random, os
 import string
 
 app = Flask(__name__)
 
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 @app.route('/', methods=['GET', 'POST'])
 def password_generator():
     if request.method == 'POST':
