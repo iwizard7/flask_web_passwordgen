@@ -1,5 +1,7 @@
 # flask_web_passwordgen 🔐
 
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/iwizard7/flask_web_passwordgen) ![GitHub repo file count (file type)](https://img.shields.io/github/directory-file-count/iwizard7/flask_web_passwordgen)
+
 #### Build & run in docker ⚙️
 ```bash
 git clone https://github.com/iwizard7/flask_web_passwordgen.git
